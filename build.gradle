@@ -8,7 +8,8 @@
 
 plugins {
     // Apply the java-library plugin to add support for Java Library
-    id 'java-library'
+    id 'java'
+    id "io.freefair.lombok" version "5.1.0"
 }
 
 repositories {
