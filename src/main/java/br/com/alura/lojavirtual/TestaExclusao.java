@@ -1,9 +1,11 @@
-package loja.virtual.repository;
+package br.com.alura.lojavirtual;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.text.MessageFormat;
+
+import br.com.alura.lojavirtual.util.DBConnectionFactory;
 
 public class TestaExclusao {
 
@@ -20,6 +22,5 @@ public class TestaExclusao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 }

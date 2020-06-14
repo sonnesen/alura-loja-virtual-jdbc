@@ -20,4 +20,6 @@ repositories {
 
 dependencies {
     compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.20'
+    compile group: 'com.mchange', name: 'mchange-commons-java', version: '0.2.20'
+    compile group: 'com.mchange', name: 'c3p0', version: '0.9.5.5'
 }

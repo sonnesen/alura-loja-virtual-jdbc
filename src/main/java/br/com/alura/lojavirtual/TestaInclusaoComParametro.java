@@ -1,4 +1,4 @@
-package loja.virtual.repository;
+package br.com.alura.lojavirtual;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -8,6 +8,9 @@ import java.sql.Statement;
 import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.List;
+
+import br.com.alura.lojavirtual.model.Produto;
+import br.com.alura.lojavirtual.util.DBConnectionFactory;
 
 public class TestaInclusaoComParametro {
 
