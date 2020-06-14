@@ -8,9 +8,8 @@ import java.text.MessageFormat;
 public class TestaExclusao {
 
 	public static void main(String[] args) {
-		try (Connection connection = new DBConnectionFactory().getConnection()) {
-			PreparedStatement stm = connection.prepareStatement("delete from produto where id > ?");
-
+		try (Connection connection = new DBConnectionFactory().getConnection();
+				PreparedStatement stm = connection.prepareStatement("delete from produto where id > ?")) {
 			stm.setInt(1, 2);
 			stm.execute();
 

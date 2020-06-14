@@ -3,14 +3,12 @@ package loja.virtual.repository;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @ToString
 public class Produto {
 
@@ -26,6 +24,11 @@ public class Produto {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public Produto(String nome, String descricao) {
+		this.nome = nome;
+		this.descricao = descricao;
 	}
 
 }

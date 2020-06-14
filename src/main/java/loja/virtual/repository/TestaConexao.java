@@ -11,6 +11,5 @@ public class TestaConexao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-
 	}
 }
